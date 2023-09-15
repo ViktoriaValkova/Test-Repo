@@ -1,1 +1,3 @@
 some text here
+
+new text from second branch
