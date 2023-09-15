@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 D
 n ty try 
 
 
 int num = 5 
+=======
+
+>>>>>>> 934d958 (test rebase)
 second branch 
 
 int num = 6
 kgkgkggk
+
+n ty try 
+int num = 5 
+fff
+
+
+
