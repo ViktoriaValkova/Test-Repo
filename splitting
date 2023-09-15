@@ -9,7 +9,7 @@ class Program
 
         int firstSpaceIndex = input.IndexOf(' ');
 
-        if (firstSpaceIndex != -1)
+)
         {
             string firstPart = input.Substring(0, firstSpaceIndex);
             string secondPart = input.Substring(firstSpaceIndex + 1);
