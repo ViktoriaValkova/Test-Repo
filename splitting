@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        string input = "Hello World";
+        string input = "testingd";
 
         int firstSpaceIndex = input.IndexOf(' ');
 
