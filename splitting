@@ -23,8 +23,21 @@ class Program
         }
     }
 }
+
 sdgs
 as
 dfsfdg
 
-sfsgdfas
+
+int age = 25;
+bool isStudent = false;
+
+if (age >= 18 && !isStudent)
+{
+    Console.WriteLine("You are eligible to vote.");
+}
+else
+{
+    Console.WriteLine("You are not eligible to vote.");
+}
+
