@@ -1,8 +1,0 @@
-first branch line 
-
-
-int num = int.Parse(Console.ReadLine());
-
-ddd
-
-
