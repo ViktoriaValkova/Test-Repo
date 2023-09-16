@@ -1,0 +1,28 @@
+package main
+
+import (
+	"errors"
+	"fmt"
+	"net/http"
+	"os"
+	"spa-first-steps/server/api"
+)
+
+func main() {
+	//set up the request handlers with the http.HandleFunc function by passing it thego run
+	//  / path for the getRoot handler function
+	http.HandleFunc("/", api.GetRoot)
+	http.HandleFunc("/post", api.PostHandler) // New handler for POST requests
+
+	//start the server and listen for requests
+	err := http.ListenAndServe(":8080", nil)
+	if errors.Is(err, http.ErrServerClosed) {
+		fmt.Printf("server closed\n")
+		//if there is a problem connecting:
+	} else if err != nil {
+		//log.Fatal(err) -> why not use this:
+		fmt.Printf("error starting server: %s\n", err)
+		os.Exit(1)
+	}
+}
+
