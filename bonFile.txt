@@ -12,7 +12,7 @@ func main() {
 	//set up the request handlers with the http.HandleFunc function by passing it thego run
 	//  / path for the getRoot handler function
 	http.HandleFunc("/", api.GetRoot)
-	http.HandleFunc("/post", api.PostHandler) // New handler for POST requests
+	http.HandleFunc("/post", api.PostHandler) 
 
 	//start the server and listen for requests
 	err := http.ListenAndServe(":8080", nil)
